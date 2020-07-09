@@ -1,22 +1,19 @@
 import React from "react";
+import "./App.css";
 
-function ProjectCard() {
+const ProjectCard = (props) => {
+  const { image, title, description } = props;
   return (
-    <div>
-      <div class="max-w-sm rounded overflow-hidden shadow-lg my-10  mx-5">
-        {/* <img src="./fblive.png"></img> */}
-        <div class="px-12 py-10">
-          <div class="font-bold text-xl mb-2"> Project #1</div>
-
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
+    <div className="transition duration-500 ease-in-out bg-white  hover:bg-gray-100 transform hover:-translate-y-1 hover:scale-100 rounded overflow-hidden shadow-lg border-4 border-blue-800 border-opacity-75 my-10 mx-5 px-12 py-10">
+      <div className="flex flex-col ">
+        <img className="justify-center" src={image} />
+        <div className="py-6">
+          <h3 className="font-bold text-xl mb-2"> {title} </h3>
+          <p className="text-gray-700 text-base"> {description} </p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

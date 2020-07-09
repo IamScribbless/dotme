@@ -86891,3 +86891,15 @@ video {
   }
 }
 
+
+.profpic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profpic2{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
